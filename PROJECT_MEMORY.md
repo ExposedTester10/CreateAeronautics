@@ -106,3 +106,20 @@ then the Vista Aeronautics Fix version is too old.
    - Delete the `config/` folder for the problematic mod to reset to default settings (backup first).  
 4. If the crash persists after removing a suspect mod, repeat the process to isolate the culprit.
 
+
+## Manual Fix for Vista Aeronautics Fix
+
+The Vista Aeronautics Fix 1.0.1 jar must be downloaded manually from CurseForge due to anti‑bot protections.
+
+1. Open your browser and go to: https://www.curseforge.com/minecraft/mc-mods/vista-aeronautics-fix/files
+2. Locate the file **VistaAeronauticsFix-1.0.1** (marked as *Beta* or *Release*).
+3. Click the **Download** button. Your browser will present a Cloudflare challenge; solve it (usually just wait a few seconds).
+4. After the download completes, verify the file is a genuine JAR:
+   - It should be about **5–6 KB** in size.
+   - Opening it with a text editor should *not* show HTML like `<!DOCTYPE html>`.
+5. Move the downloaded jar into the modpack’s `mods` folder:
+   `C:\Users\this4\curseforge\minecraft\Instances\CreateAeronautics\mods\`
+   (replace any existing `VistaAeronauticsFix-1.0.0.jar` or `VistaAeronauticsFix-1.0.1.jar`).
+6. Launch the pack via the CurseForge client.
+
+If you still see the "zip END header not found" error, repeat the download and ensure the file is not an HTML error page.
