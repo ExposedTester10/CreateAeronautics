@@ -1,0 +1,32 @@
+# Create Mod Configuration Template
+# Place this file in config/create-common.toml
+
+[mechanical]
+# Reduce mechanical power loss for better performance (optional)
+powerLoss = 0.02  # Default is 0.025; lower means less loss, less tick load?
+# Increase steam efficiency if using steam
+steamPowerModifier = 1.0
+
+[worldgen]
+# Disable unnecessary worldgen features to reduce load
+enableUndergroundBiomes = false
+enableRareEarthgen = false
+
+[device]
+# Limit the speed of certain devices if needed
+# maxFanSpeed = 256
+# maxDeployerSpeed = 40
+
+[performance]
+# Enable faster chunk loading for Create structures (if available)
+fastChunkLoading = true
+# Reduce entity tracking range for Create entities
+entityTrackingRange = 64  # Default may be higher; lower reduces CPU
+
+[filters]
+# Optimize filter processing
+filterUpdateRate = 10  # ticks between filter checks; higher reduces CPU but slower response
+
+[debug]
+# Disable debug info to save performance
+debugEnabled = false

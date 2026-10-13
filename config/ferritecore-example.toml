@@ -1,0 +1,23 @@
+# FerriteCore Configuration Template
+# Place this file in config/ferritecore-common.toml (or ferritecore-client.toml depending on side)
+# Adjust values as needed for performance.
+
+[general]
+# Enable async chunk loading (if available)
+asyncChunkLoading = true
+# Reduce memory usage by disabling unused features
+disableUnusedFeatures = true
+# Optimize entity ticking
+optimizeEntityTicking = true
+# Reduce particle counts
+particleReduction = 0.5  # 0.0 to 1.0, lower means fewer particles
+
+[memory]
+# Enable garbage collection tuning
+gcTuning = true
+# Set max direct memory (if applicable)
+# maxDirectMemory = 512M  # Uncomment and adjust
+
+[logging]
+# Reduce log spam
+logLevel = "WARN"
