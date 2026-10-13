@@ -123,3 +123,17 @@ The Vista Aeronautics Fix 1.0.1 jar must be downloaded manually from CurseForge 
 6. Launch the pack via the CurseForge client.
 
 If you still see the "zip END header not found" error, repeat the download and ensure the file is not an HTML error page.
+
+## Create Deep Seas Configuration
+
+A template config file `create-deep-seas-common.toml` has been added to the `config/` folder. Adjust the values to tune hull strength, buoyancy, propulsion, and maintenance for a survival‑friendly experience.
+
+**Suggested starting values (based on real‑life ship design):**
+- Base hull strength: 1500 (adjust up/down for heavier/lighter vessels)
+- Layer multiplier: 1.2 per additional hull plate
+- Base buoyancy: 10.0 per hull block (enables realistic displacement)
+- Propeller efficiency: 0.8, rudder effectiveness: 0.6
+- Collision damage factor: 0.2 (reduces accidental damage from minor bumps)
+- Maintenance interval: 12000 ticks (~10 minutes) with a small iron cost.
+
+Feel free to tweak these to match your desired level of realism and challenge.
