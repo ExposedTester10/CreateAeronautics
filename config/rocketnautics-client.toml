@@ -1,5 +1,5 @@
 #Has the world border warning been shown to the player?
-hasShownWorldBorderWarning = false
+hasShownWorldBorderWarning = true
 
 [Visuals]
 	#Intensity multiplier for camera shake near engines
