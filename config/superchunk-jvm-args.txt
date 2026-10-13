@@ -1,0 +1,7 @@
+# SuperChunk: use Generational ZGC for smooth chunk streaming at high render distance.
+# A mod cannot change the running JVM's garbage collector, so paste the line below into your
+# launcher's JVM / "Additional Arguments" (CurseForge: Profile Options -> Java; Prism: Settings
+# -> Java). REMOVE any -XX:+UseG1GC / Aikar-style G1 flags first; give the JVM >= 8G for RD 48+.
+# (Dedicated servers are auto-configured in user_jvm_args.txt instead.)
+
+-XX:+UseZGC -XX:+ZGenerational
