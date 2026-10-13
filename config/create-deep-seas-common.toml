@@ -1,59 +1,58 @@
 # Create Deep Seas Configuration
-# Adjust these values to balance survival gameplay while keeping realism.
-# Values are suggestions; tweak to taste.
+# Adjusted for balanced survival gameplay with realistic hull strength.
 
 [general]
 # Enable realistic water physics (if available)
 realisticWaterPhysics = true
 # Enable corrosion over time (adds maintenance)
 enableCorrosion = true
-corrosionRate = 0.001  # per tick; low for slow decay
+corrosionRate = 0.0005  # per tick; very slow decay
 
 [hull]
 # Hull strength measured in arbitrary units; higher = more resistant to damage.
 # Real-life ship hull thickness ~10-30mm steel; we map to a scale.
 # For survival, we want hulls to withstand moderate collisions but break under extreme forces.
-baseHullStrength = 1500
+baseHullStrength = 1000
 # Strength multiplier per hull block layer (if using layered hulls)
-layerMultiplier = 1.2
+layerMultiplier = 1.1
 # Maximum layers allowed before diminishing returns
-maxLayers = 4
+maxLayers = 3
 # Hull repair rate (if using repair mechanics)
-repairRate = 0.05  # hull points restored per tick when repaired
+repairRate = 0.02  # hull points restored per tick when repaired
 
 [buoyancy]
 # Buoyancy determines how much weight the hull can support before sinking.
 # Real-life displacement: weight of water displaced equals weight of ship.
 # We set a base buoyancy per hull block.
-baseBuoyancy = 10.0
+baseBuoyancy = 8.0
 # Additional buoyancy from air chambers (if using)
-airChamberBuoyancy = 5.0
+airChamberBuoyancy = 3.0
 # Minimum buoyancy to stay afloat (if negative, ship sinks)
 minBuoyancyToFloat = 0.0
 
 [propulsion]
 # Propeller efficiency (0.0 to 1.0)
-propellerEfficiency = 0.8
+propellerEfficiency = 0.7
 # Rudder effectiveness (turn rate)
-rudderEffectiveness = 0.6
+rudderEffectiveness = 0.5
 # Engine power scaling (if using Create engines)
-enginePowerScale = 1.0
+enginePowerScale = 0.9
 
 [collision]
 # Damage taken from colliding with blocks at speed
 # Lower = more forgiving (survival friendly)
-collisionDamageFactor = 0.2
+collisionDamageFactor = 0.25
 # Speed threshold above which damage applies (blocks per tick)
-damageSpeedThreshold = 0.3
+damageSpeedThreshold = 0.25
 
 [weather]
 # Effect of storms on ship stability
-stormStabilityFactor = 0.7  # reduces effective hull strength in storm
+stormStabilityFactor = 0.6  # reduces effective hull strength in storm
 # Chance of taking damage from lightning strike (if exposed)
-lightningDamageChance = 0.01
+lightningDamageChance = 0.005
 
 [maintenance]
 # Interval (in ticks) for automatic maintenance checks
-maintenanceInterval = 12000  # 10 minutes at 20 tps
+maintenanceInterval = 6000  # 5 minutes at 20 tps
 # Resource cost per maintenance check (e.g., iron ingots)
-maintenanceCost = 4
+maintenanceCost = 2
