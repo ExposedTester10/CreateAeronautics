@@ -16,7 +16,7 @@ baseHullStrength = 1000
 # Strength multiplier per hull block layer (if using layered hulls)
 layerMultiplier = 1.1
 # Maximum layers allowed before diminishing returns
-maxLayers = 3
+maxLayers = 2
 # Hull repair rate (if using repair mechanics)
 repairRate = 0.02  # hull points restored per tick when repaired
 
