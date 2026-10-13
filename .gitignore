@@ -1,0 +1,11 @@
+# Ignore large or transient files
+logs/
+saves/
+modrinth.index.json
+*.log
+*.cache
+# Curseforge specific
+instance_overrides/
+# OS files
+.DS_Store
+Thumbs.db
