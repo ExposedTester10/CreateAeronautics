@@ -79,3 +79,30 @@ Due to anti-bot protections on CurseForge/Modrinth, automated download of mod JA
 - Keep logs organized; consider adding a log‑review script or guide for common issues.
 - Use `.gitignore` to exclude large or transient files (e.g., `logs/`, `saves/`, `modrinth.index.json` if applicable) while preserving essential configs.
 - **Vista Aeronautics Fix 1.0.1 beta** (required for Vista 5.5.7 to avoid "incompatible with Vista fix 1.0.1 or below" error)
+
+
+## Troubleshooting
+
+### Vista / Vista Aeronautics Fix incompatibility
+If you see an error like:
+```
+Mod vista is incompatible with vistafix 1.0.1 or below
+Currently, vistafix is 1.0.0
+```
+then the Vista Aeronautics Fix version is too old.  
+- Ensure you have **Vista Aeronautics Fix 1.0.1 (beta)** or newer installed.  
+- Remove any older `VistaAeronauticsFix-1.0.0.jar` from the `mods` folder.  
+- Download the latest version from CurseForge (search for “Vista Aeronautics Fix”, choose the NeoForge 1.21.1 file).  
+- Verify that both **Vista** (version 5.5.7 or newer) and **Moonlight Lib** are present, as the fix requires them.  
+- After updating, launch the pack again.
+
+### General crash debugging
+1. Check the most recent crash report in `crash-reports/` (or `logs/latest.log` if available).  
+2. Look for the line that says “Mod loading failures have occurred” and note the mod name and failure message.  
+3. Common fixes:  
+   - Update the offending mod to a compatible version.  
+   - Remove conflicting mods (e.g., two versions of the same mod).  
+   - Ensure all mods are for the correct loader (NeoForge) and Minecraft version (1.21.1).  
+   - Delete the `config/` folder for the problematic mod to reset to default settings (backup first).  
+4. If the crash persists after removing a suspect mod, repeat the process to isolate the culprit.
+
