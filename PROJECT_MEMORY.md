@@ -129,11 +129,18 @@ If you still see the "zip END header not found" error, repeat the download and e
 A template config file `create-deep-seas-common.toml` has been added to the `config/` folder. Adjust the values to tune hull strength, buoyancy, propulsion, and maintenance for a survival‑friendly experience.
 
 **Suggested starting values (based on real‑life ship design):**
-- Base hull strength: 1500 (adjust up/down for heavier/lighter vessels)
-- Layer multiplier: 1.2 per additional hull plate
-- Base buoyancy: 10.0 per hull block (enables realistic displacement)
-- Propeller efficiency: 0.8, rudder effectiveness: 0.6
-- Collision damage factor: 0.2 (reduces accidental damage from minor bumps)
-- Maintenance interval: 12000 ticks (~10 minutes) with a small iron cost.
+- Base hull strength: 1000 (adjust up/down for heavier/lighter vessels)
+- Layer multiplier: 1.1 per additional hull plate
+- Maximum layers: 3 before diminishing returns
+- Base buoyancy: 8.0 per hull block
+- Air chamber buoyancy: 3.0
+- Propeller efficiency: 0.7, rudder effectiveness: 0.5
+- Engine power scale: 0.9
+- Collision damage factor: 0.25 (reduces accidental damage from minor bumps)
+- Damage speed threshold: 0.25 blocks/tick
+- Storm stability factor: 0.6 (reduces effective hull strength in storm)
+- Lightning damage chance: 0.005
+- Maintenance interval: 6000 ticks (~5 minutes) with a small iron cost.
+- Maintenance cost: 2 iron ingots per check
 
 Feel free to tweak these to match your desired level of realism and challenge.
