@@ -9,3 +9,5 @@ instance_overrides/
 # OS files
 .DS_Store
 Thumbs.db
+vista_ffmpeg_bin/ffprobe.exe
+vista_ffmpeg_bin/ffmpeg.exe
