@@ -78,3 +78,4 @@ Due to anti-bot protections on CurseForge/Modrinth, automated download of mod JA
 - Review mod licenses before redistributing any packaged modpack.
 - Keep logs organized; consider adding a log‑review script or guide for common issues.
 - Use `.gitignore` to exclude large or transient files (e.g., `logs/`, `saves/`, `modrinth.index.json` if applicable) while preserving essential configs.
+- **Vista Aeronautics Fix 1.0.1 beta** (required for Vista 5.5.7 to avoid "incompatible with Vista fix 1.0.1 or below" error)
